@@ -2,16 +2,10 @@
   <section class="container">
     <div>
       <logo />
-      <h1 class="title">
-        homepage
-      </h1>
+      <h1 class="title">MarkCreativeSchool</h1>
       <h2 class="subtitle">
-        My flawless Nuxt.js project
+        つくば市のプログラミングスクール
       </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
-      </div>
     </div>
   </section>
 </template>
@@ -20,7 +14,7 @@
 export default {}
 </script>
 
-<style>
+<style lang="scss" scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -35,19 +29,23 @@ export default {}
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
   letter-spacing: 1px;
+  color: #fff;
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
+  color: #fff;
 }
-
-.links {
-  padding-top: 15px;
+@media (max-width: 640px) {
+  .title {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 26px;
+  }
 }
 </style>
