@@ -39,7 +39,7 @@ module.exports = {
    ** Global CSS
    */
   css: ["@/assets/scss/main.scss"],
-  plugins: [],
+  plugins: [{ src: "~plugins/ga.js", ssr: false }],
   modules: ["@nuxtjs/axios", "@nuxtjs/bulma", "@nuxtjs/pwa"],
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
