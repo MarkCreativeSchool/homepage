@@ -1,23 +1,6 @@
 # homepage
-
-> My flawless Nuxt.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+## 証明書自動更新
+cronには設定したけどちゃんと動くか不明
+```bash
+$ sudo certbot-auto renew
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
-# homepage

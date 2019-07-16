@@ -15,11 +15,15 @@
         <div class="column">
           <a href="https://twitter.com/m_c_school" target="_blank" class="button">Twitter</a>
         </div>
+        <!--
         <div class="column">
           <a href="" target="_blank" class="button">お問い合わせ</a>
         </div>
+        -->
       </div>
     </div>
+    <div class="company">MARK Inc.</div>
+    <div class="tel">029-875-7647</div>
     <div class="address">茨城県つくば市花室983-1 嶋村ビル301</div>
   </section>
 </template>
@@ -88,6 +92,18 @@ export default {
   }
 }
 
+.company {
+  position: fixed;
+  right: 30px;
+  bottom: 70px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.tel {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+}
 .address {
   position: fixed;
   right: 30px;
