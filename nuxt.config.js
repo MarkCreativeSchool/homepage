@@ -45,7 +45,7 @@ module.exports = {
     // See https://github.com/nuxt-community/axios-module#options
   },
   router: {
-    middleware: ["https"],
+    // middleware: ["https"],
   },
   build: {
     postcss: {
