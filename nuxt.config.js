@@ -1,5 +1,16 @@
 const pkg = require('./package')
 
+const nuxtEnvs = {
+  local: {
+    buildEnv: "local",
+  },
+  production: {
+    buildEnv: "production",
+  },
+}
+
+const env = nuxtEnvs[process.env.NODE_ENV || "local"]
+
 module.exports = {
   mode: "universal",
 
@@ -18,7 +29,7 @@ module.exports = {
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Sawarabi+Mincho" },
     ],
   },
-
+  env: env,
   /*
    ** Customize the progress-bar color
    */
@@ -28,32 +39,14 @@ module.exports = {
    ** Global CSS
    */
   css: ["@/assets/scss/main.scss"],
-
-  /*
-   ** Plugins to load before mounting the App
-   */
   plugins: [],
-
-  /*
-   ** Nuxt.js modules
-   */
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
-    '@nuxtjs/pwa'
-  ],
-  /*
-   ** Axios module configuration
-   */
+  modules: ["@nuxtjs/axios", "@nuxtjs/bulma", "@nuxtjs/pwa"],
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-
-  /*
-   ** Build configuration
-   */
+  router: {
+    middleware: ["https"],
+  },
   build: {
     postcss: {
       preset: {
@@ -62,16 +55,13 @@ module.exports = {
         },
       },
     },
-    /*
-     ** You can extend webpack config here
-     */
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
-          enforce: 'pre',
+          enforce: "pre",
           test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
+          loader: "eslint-loader",
           exclude: /(node_modules)/,
         })
       }
