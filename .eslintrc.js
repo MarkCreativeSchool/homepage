@@ -15,10 +15,21 @@ module.exports = {
     'prettier/vue'
   ],
   plugins: [
+    'vue',
     'prettier'
   ],
   // add your custom rules here
   rules: {
-    'nuxt/no-cjs-in-config': 'off'
+    'prettier/prettier': ["error", {
+      "semi": false,
+      'trailingComma': "es5"
+    }],
+    "no-console": "off",
+    "vue/html-closing-bracket-newline": [2, {"multiline": "never"}],
+    'vue/html-self-closing': 'off',
+    'vue/max-attributes-per-line': 'off',
+    'vue/attributes-order': 'off',
+    'vue/require-prop-types': 'off',
+    'vue/singleline-html-element-content-newline': 'off'
   }
 }
