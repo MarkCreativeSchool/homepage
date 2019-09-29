@@ -8,4 +8,5 @@ generate:
 # Github Pagesにデプロイ
 deploy:
 	npm run generate:gh-pages
+	cp ./CNAME dist/CNAME
 	npm run deploy
