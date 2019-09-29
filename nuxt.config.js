@@ -41,7 +41,7 @@ module.exports = {
    */
   loading: { color: "#fff" },
   router: {
-    base: "/homepage/"
+    // base: "/homepage/"
   },
   /*
    ** Global CSS
