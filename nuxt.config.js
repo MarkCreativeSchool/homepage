@@ -40,7 +40,9 @@ module.exports = {
    ** Customize the progress-bar color
    */
   loading: { color: "#fff" },
-  ...routerBase,
+  router: {
+    base: "/homepage/",
+  },
   /*
    ** Global CSS
    */
