@@ -18,7 +18,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 const env = nuxtEnvs[process.env.NODE_ENV || "local"]
 
 module.exports = {
-  mode: "spa",
+  mode: "universal",
 
   /*
    ** Headers of the page
@@ -40,9 +40,7 @@ module.exports = {
    ** Customize the progress-bar color
    */
   loading: { color: "#fff" },
-  router: {
-    base: "/homepage/",
-  },
+  ...routerBase,
   /*
    ** Global CSS
    */
@@ -51,9 +49,6 @@ module.exports = {
   modules: ["@nuxtjs/axios", "@nuxtjs/bulma", "@nuxtjs/pwa"],
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-  },
-  router: {
-    // middleware: ["https"],
   },
   build: {
     postcss: {
