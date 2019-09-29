@@ -18,7 +18,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 const env = nuxtEnvs[process.env.NODE_ENV || "local"]
 
 module.exports = {
-  mode: "universal",
+  mode: "spa",
 
   /*
    ** Headers of the page
@@ -40,7 +40,9 @@ module.exports = {
    ** Customize the progress-bar color
    */
   loading: { color: "#fff" },
-  ...routerBase,
+  router: {
+    base: "/homepage/"
+  },
   /*
    ** Global CSS
    */
