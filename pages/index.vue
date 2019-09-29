@@ -15,11 +15,6 @@
         <div class="column">
           <a href="https://twitter.com/m_c_school" target="_blank" class="button">Twitter</a>
         </div>
-        <!--
-        <div class="column">
-          <a href="" target="_blank" class="button">お問い合わせ</a>
-        </div>
-        -->
       </div>
     </div>
     <div class="company">MARK Inc.</div>
@@ -32,14 +27,24 @@
 export default {
   head() {
     return {
-      title: "MarkCreativeSchool",
+      title: "MarkCreativeSchool - つくば市のプログラミングスクール",
       meta: [
-        { hid: "description", name: "description", content: "共通ディスクリプション" },
-        { hid: "og:site_name", property: "og:site_name", content: "サイト名" },
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "つくば市のプログラミングスクール。主にMineCraftを使って、Lua・Python・Javaなどでゲームを作りながらプログラミングを学びます / 毎週月水土 / 授業料: 週1-5,500円(税込) 週2-8,500円(税込) / 無料体験随時募集中！！",
+        },
+        { hid: "og:site_name", property: "og:site_name", content: "MarkCreativeSchool - つくば市のプログラミングスクール" },
         { hid: "og:type", property: "og:type", content: "website" },
-        { hid: "og:url", property: "og:url", content: "https://example.com" },
-        { hid: "og:title", property: "og:title", content: "サイト名" },
-        { hid: "og:description", property: "og:description", content: "共通ディスクリプション" },
+        { hid: "og:url", property: "og:url", content: "https://www.mark-cs.com" },
+        { hid: "og:title", property: "og:title", content: "MarkCreativeSchool - つくば市のプログラミングスクール" },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content:
+            "つくば市のプログラミングスクール。主にMineCraftを使って、Lua・Python・Javaなどでゲームを作りながらプログラミングを学びます / 毎週月水土 / 授業料: 週1-5,500円(税込) 週2-8,500円(税込) / 無料体験随時募集中！！",
+        },
         { hid: "og:image", property: "og:image", content: "https://example.com/img/ogp/common.jpg" },
       ],
     }
