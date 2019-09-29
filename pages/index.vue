@@ -19,7 +19,7 @@
     </div>
     <div class="company">MARK Inc.</div>
     <div class="tel">029-875-7647 / markcreativeschool@gmail.com</div>
-    <div class="address">茨城県つくば市花室983-1 嶋村ビル301</div>
+    <div class="address">茨城県つくば市花室983-1 嶋村ビル301.</div>
   </section>
 </template>
 
