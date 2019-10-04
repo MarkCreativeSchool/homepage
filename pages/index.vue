@@ -1,26 +1,74 @@
 <template>
-  <section class="container">
-    <div>
-      <h1 class="title">MarkCreativeSchool</h1>
-      <h2 class="subtitle">
-        つくば市のプログラミングスクール
-      </h2>
-      <div class="links columns is-multiline is-mobile">
-        <div class="column is-6-mobile">
-          <a href="https://www.instagram.com/mark_creative_school/" target="_blank" class="button">Instagram</a>
+  <div class="wrapper">
+    <div class="bg black">
+      <section class="container">
+        <div>
+          <h1 class="title">MarkCreativeSchool</h1>
+          <h2 class="subtitle">
+            つくば市のプログラミングスクール
+          </h2>
+          <div class="catch">
+            <div>技術の進歩を止めることはできません。</div>
+            <div>できるのはそれに適応することです。</div>
+          </div>
+          <div class="links columns is-multiline is-mobile">
+            <div class="column is-6-mobile">
+              <a href="https://www.instagram.com/mark_creative_school/" target="_blank" class="button">Instagram</a>
+            </div>
+            <div class="column is-6-mobile">
+              <a href="https://www.facebook.com/MarkCreativeSchool" target="_blank" class="button">Facebook</a>
+            </div>
+            <div class="column">
+              <a href="https://twitter.com/m_c_school" target="_blank" class="button">Twitter</a>
+            </div>
+          </div>
         </div>
-        <div class="column is-6-mobile">
-          <a href="https://www.facebook.com/MarkCreativeSchool" target="_blank" class="button">Facebook</a>
-        </div>
-        <div class="column">
-          <a href="https://twitter.com/m_c_school" target="_blank" class="button">Twitter</a>
-        </div>
-      </div>
+        <div class="company">MARK Inc.</div>
+        <div class="tel">029-875-7647 / markcreativeschool@gmail.com</div>
+        <div class="address">茨城県つくば市花室983-1 嶋村ビル301.</div>
+      </section>
     </div>
-    <div class="company">MARK Inc.</div>
-    <div class="tel">029-875-7647 / markcreativeschool@gmail.com</div>
-    <div class="address">茨城県つくば市花室983-1 嶋村ビル301.</div>
-  </section>
+    <div class="bg gray">
+      <section class="containerB">
+        <h2 class="guide">生徒募集中</h2>
+        <div class="columns">
+          <div class="column">
+            <h3>開講日/受講料金</h3>
+            <div>月曜日 : 16:30 〜 19:00</div>
+            <div>水曜日 : 16:30 〜 19:00</div>
+            <div>土曜日 : 14:00 〜 16:15</div>
+            <div>週1回 1時間 / 5,500円(税込)</div>
+            <div>週1回 2時間 / 8,500円(税込)</div>
+          </div>
+          <div class="column">
+            <h3>年齢/学年</h3>
+            <div>小4〜 / 中学生・高校生も歓迎</div>
+          </div>
+          <div class="column">
+            <h3>内容</h3>
+            <p>マインクラフトを使ったプログラミングの学習</p>
+            <p>マインクラフトのマルチサーバーの運営</p>
+            <p>Python/JavaScriptなどのプログラミングの学習</p>
+            <p></p>
+          </div>
+        </div>
+        <div>※{{ today() }} 現在</div>
+      </section>
+    </div>
+    <div class="bg black">
+      <section class="container">
+        <div>
+          <h1 class="title">無料体験</h1>
+          <h2 class="subtitle">随時募集中です。お気軽にお電話ください。</h2>
+          <div class="links columns is-multiline is-mobile">
+            <div class="column">
+              <a href="tel:029-875-7647" target="_blank" class="button">電話をかける</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -49,17 +97,58 @@ export default {
       ],
     }
   },
+  methods: {
+    today: function() {
+      const dt = new Date()
+      const y = dt.getFullYear()
+      const m = ("00" + (dt.getMonth() + 1)).slice(-2)
+      const d = ("00" + dt.getDate()).slice(-2)
+      const result = y + "/" + m + "/" + d
+      return result
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
+.bg {
+  &.black {
+    background: #000;
+  }
+  &.gray {
+    background: #181818;
+  }
+}
+
 .container {
-  margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.containerB {
+  margin: 0 auto;
+  max-width: 1344px;
+  min-height: 100vh;
+  padding: 30px;
+  .guide {
+    font-family: "sawarabi Mincho", "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .columns {
+    .column {
+      h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
 
 .title {
@@ -81,6 +170,14 @@ export default {
   word-spacing: 5px;
   padding-bottom: 15px;
   color: #fff;
+}
+
+.catch {
+  margin-bottom: 3rem;
+  font-size: 24px;
+  div {
+    display: inline-block;
+  }
 }
 
 .links {
@@ -116,14 +213,28 @@ export default {
 }
 
 @media (max-width: 640px) {
-  .columns {
-    padding: 0 30px;
+  .wrapper {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .container {
+    // display: block;
+    // margin-top: 45px;
+    .columns {
+      padding: 0 30px;
+    }
   }
   .title {
-    font-size: 40px;
+    font-size: 36px;
   }
   .subtitle {
-    font-size: 26px;
+    font-size: 20px;
+  }
+  .catch {
+    font-size: 18px;
+  }
+  .links {
+    padding: 0 30px;
   }
 }
 </style>
