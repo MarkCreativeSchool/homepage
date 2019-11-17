@@ -33,26 +33,35 @@
         <h2 class="guide">生徒募集中</h2>
         <div class="columns">
           <div class="column">
-            <h3>開講日/受講料金</h3>
+            <h3>開講日</h3>
             <div>月曜日 : 16:30 〜 19:00</div>
             <div>水曜日 : 16:30 〜 19:00</div>
             <div>土曜日 : 14:00 〜 16:15</div>
-            <div>週1回 1時間 / 5,500円(税込)</div>
-            <div>週1回 2時間 / 8,500円(税込)</div>
           </div>
           <div class="column">
-            <h3>年齢/学年</h3>
+            <h3>受講料金</h3>
+            <div>1時間(月4回) / 5,500円(税込)</div>
+            <div>2時間(月4回) / 8,500円(税込)</div>
             <div>小4〜 / 中学生・高校生も歓迎</div>
+            <div>受講いただく月回数は4回になりますが1時間か2時間でお選びください</div>
           </div>
           <div class="column">
             <h3>内容</h3>
             <p>マインクラフトを使ったプログラミングの学習</p>
             <p>マインクラフトのマルチサーバーの運営</p>
             <p>Python/JavaScriptなどのプログラミングの学習</p>
-            <p></p>
+            <p>他、子供達が興味を示すこと</p>
           </div>
         </div>
-        <div>※{{ today() }} 現在</div>
+        <div class="today">※{{ today() }} 現在</div>
+        <h2 class="guide">授業内容</h2>
+        <div class="columns">
+          <div class="column is-12">
+            <p>MarkCreativeSchoolでは自発的なアイデアを尊重しています。</p>
+            <p>机に座って先生が生徒に一方的に教えるということはせず</p>
+            <p>自分たちでアイデアを出し、プログラムを使って"形"にする手助けをしてします。</p>
+          </div>
+        </div>
       </section>
     </div>
     <div class="bg black">
@@ -146,8 +155,14 @@ export default {
       h3 {
         font-size: 24px;
         margin-bottom: 10px;
+        border-left: solid 5px #aaa;
+        line-height: 1;
+        padding-left: 15px;
       }
     }
+  }
+  .today {
+    margin-bottom: 60px;
   }
 }
 
