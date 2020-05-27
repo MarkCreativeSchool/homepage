@@ -25,15 +25,8 @@ module.exports = {
    */
   head: {
     title: pkg.name,
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
-    ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Sawarabi+Mincho" },
-    ],
+    meta: [{ charset: "utf-8" }, { name: "viewport", content: "width=device-width, initial-scale=1" }, { hid: "description", name: "description", content: "つくば市のプログラミングスクール。主にMineCraftを使って、Lua・Python・Javaなどでゲームを作りながらプログラミングを学びます。無料体験随時募集中！！" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }, { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Sawarabi+Mincho" }],
   },
   env: env,
   /*

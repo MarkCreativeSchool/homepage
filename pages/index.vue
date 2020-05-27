@@ -22,6 +22,11 @@
               <a href="https://twitter.com/m_c_school" target="_blank" class="button">Twitter</a>
             </div>
           </div>
+          <div style="font-size: 20px;margin-top: 30px;">
+            <div>お知らせ</div>
+            <div>4/18〜5/20までコロナ対策のため教室でのレッスンは休校といたします</div>
+            <div>6月以降のスケジュールは個別でご連絡対応しております。</div>
+          </div>
         </div>
         <div class="company">MARK Inc.</div>
         <div class="tel">029-875-7647 / markcreativeschool@gmail.com</div>
