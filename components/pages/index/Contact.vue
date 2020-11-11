@@ -5,24 +5,23 @@
         <div class="col-lg-6 col-md-6 col-sm-12 p-0">
           <div class="contact-box">
             <div class="main-title text-center text-md-left mb-4">
-              <h2 class="font-weight-normal">Connect With Us </h2>
+              <h2 class="font-weight-normal">お問い合わせ</h2>
             </div>
-
             <div class="text-center text-md-left">
-
               <!--Address-->
-              <p class="mb-3">123 Street New York City , United States Of America. </p>
-
+              <p class="mb-3">茨城県つくば市天久保2丁目14-2 つくばイーストビル201</p>
               <!--Phone-->
-              <p class="mb-3"> Office Telephone : 001 01085379709 <br>
-                Mobile : 001 63165370895 </p>
+              <p class="mb-3">Telephone : 029-875-7647</p>
 
               <!--Email-->
-              <p class="mb-3"> Email: <a href="mailto:email@website.com" class="color-black">admin@website.com</a> <br>
-                Inquiries: <a href="mailto:email@website.com" class="color-black">email@website.com</a> </p>
+              <p class="mb-3">
+                Email: <a href="mailto:markcreativeschool@gmail.com" class="color-black">markcreativeschool@gmail.com</a>
+              </p>
 
               <!--Timing-->
+              <!--
               <p class="mb-0">Mon-Sat: 9am to 6pm</p>
+              -->
             </div>
           </div>
         </div>

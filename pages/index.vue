@@ -8,12 +8,18 @@
     -->
     <About />
     <AboutBoxes />
+    <!--
     <Team />
+    -->
     <Quote />
     <WorkStarts />
     <Pricing />
+    <!--
     <Clients />
+    -->
+    <!--
     <Blog />
+    -->
     <Contact />
   </div>
 </template>

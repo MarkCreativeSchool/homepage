@@ -4,28 +4,32 @@
       <div class="row">
         <div class="col-md-12">
           <div class="main-title wow fadeIn" data-wow-delay="300ms">
-            <h5> Lorem ipsum dolor sit amet </h5>
-            <h2 class="mb-0">Creative<span class="color-pink"> Portfolio</span> </h2>
+            <h5>教室風景・マイクラ・アプリケーション</h5>
+            <h2 class="mb-0">Photo <span class="color-pink">Gallery</span> </h2>
           </div>
         </div>
       </div>
       <div class="row d-block">
-
         <div id="js-filters-mosaic-flat" class="cbp-l-filters-alignCenter">
           <div data-filter="*" class="cbp-filter-item-active cbp-filter-item cbp-filter-style">
-            All <div class="cbp-filter-counter"></div>
+            All
+            <div class="cbp-filter-counter"></div>
           </div>
           <div data-filter=".graphic-designs" class="cbp-filter-item cbp-filter-style">
-            Graphic Designs <div class="cbp-filter-counter"></div>
+            マインクラフト
+            <div class="cbp-filter-counter"></div>
           </div>
           <div data-filter=".web-designs" class="cbp-filter-item cbp-filter-style">
-            Web Designs <div class="cbp-filter-counter"></div>
+            教室の様子
+            <div class="cbp-filter-counter"></div>
           </div>
           <div data-filter=".seo" class="cbp-filter-item cbp-filter-style">
-            SEO <div class="cbp-filter-counter"></div>
+            ソフトウェア
+            <div class="cbp-filter-counter"></div>
           </div>
           <div data-filter=".marketing" class="cbp-filter-item">
-            Marketing <div class="cbp-filter-counter"></div>
+            Application
+            <div class="cbp-filter-counter"></div>
           </div>
         </div>
 
