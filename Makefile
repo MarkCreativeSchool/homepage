@@ -5,8 +5,13 @@ web:
 generate:
 	npm run generate:gh-pages
 
-# Github Pagesにデプロイ
+# FirebaseHostingへデプロイ
 deploy:
-	npm run generate:gh-pages
-	cp ./CNAME dist/CNAME
-	npm run deploy
+	npm run generate && \
+	firebase deploy --only hosting
+
+# Github Pagesにデプロイ
+# deploy:
+# 	npm run generate:gh-pages
+# 	cp ./CNAME dist/CNAME
+# 	npm run deploy
