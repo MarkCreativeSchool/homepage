@@ -2,7 +2,10 @@
   <div>
     <loading />
     <Header />
+    <Hero />
+    <!--
     <MainSection />
+    -->
     <About />
     <AboutBoxes />
     <Team />
@@ -18,6 +21,7 @@
 <script>
 import Loading from "../components/pages/index/Loading"
 import Header from "../components/pages/index/Header"
+import Hero from "../components/pages/index/Hero"
 import MainSection from "../components/pages/index/MainSection"
 import About from "../components/pages/index/About"
 import AboutBoxes from "../components/pages/index/AboutBoxes"
@@ -32,6 +36,7 @@ export default {
   components: {
     Loading,
     Header,
+    Hero,
     MainSection,
     About,
     AboutBoxes,

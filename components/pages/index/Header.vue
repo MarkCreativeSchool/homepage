@@ -53,7 +53,12 @@
       </div>
       <div class="inner-wrapper justify-content-center">
         <div class="col-md-12 text-center">
-          <a href="javascript:void(0)" class="logo-full mb-4"><img src="creative-studio/img/logo-pure-white.png" alt=""/></a>
+          <a href="javascript:void(0)" class="logo-full mb-4">
+            Mark Creative School
+            <!--
+            <img src="creative-studio/img/logo-pure-white.png" alt=""/>
+            -->
+          </a>
         </div>
         <nav class="side-nav m-0">
           <ul class="navbar-nav flex-lg-row">
@@ -79,7 +84,7 @@
               <a href="javascript:void(0)"><i class="fab fa-twitter color-white"></i> </a>
             </li>
           </ul>
-          <p class="text-white">&copy; 2020 MegaOne. Made With Love by Themesindustry</p>
+          <p class="text-white">&copy; 2020 Mark Creative School</p>
         </div>
       </div>
     </div>
