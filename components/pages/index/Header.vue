@@ -20,7 +20,9 @@
             <li class="nav-item"><a href="#contact" class="scroll nav-link">contact</a></li>
           </ul>
         </div>
-        <a href="javascript:void(0)" class="btn-setting btn-hvr-up btn-hvr-whatsapp color-black mr-lg-3 d-none d-lg-block"><i class="fab fa-whatsapp"></i> +1 631 112 1134</a>
+        <a href="javascript:void(0)" class="btn-setting btn-hvr-up btn-hvr-whatsapp color-black mr-lg-3 d-none d-lg-block">
+          <i class="fab fa-whatsapp"></i> 029 875 7647
+        </a>
         <!-- side menu open button -->
         <a class="menu_bars d-inline-block menu-bars-setting animated-wrap sidemenu_toggle d-block d-lg-none">
           <div class="menu-lines animated-element">

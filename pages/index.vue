@@ -10,6 +10,8 @@
     <WorkStarts />
     <Pricing />
     <Clients />
+    <Blog />
+    <Contact />
   </div>
 </template>
 
@@ -24,8 +26,23 @@ import Quote from "../components/pages/index/Quote"
 import WorkStarts from "../components/pages/index/WorkStarts"
 import Pricing from "../components/pages/index/Pricing"
 import Clients from "../components/pages/index/Clients"
+import Blog from "../components/pages/index/Blog"
+import Contact from "../components/pages/index/Contact"
 export default {
-  components: { Loading, Header, MainSection, About, AboutBoxes, Team, Quote, WorkStarts, Pricing, Clients },
+  components: {
+    Loading,
+    Header,
+    MainSection,
+    About,
+    AboutBoxes,
+    Team,
+    Quote,
+    WorkStarts,
+    Pricing,
+    Clients,
+    Blog,
+    Contact,
+  },
   head() {
     return {
       title: "MarkCreativeSchool - つくば市のプログラミングスクール",
@@ -63,139 +80,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-/*
-.bg {
-  &.black {
-    background: #000;
-  }
-  &.gray {
-    background: #181818;
-  }
-}
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.containerB {
-  margin: 0 auto;
-  max-width: 1344px;
-  min-height: 100vh;
-  padding: 30px;
-  .guide {
-    font-family: "sawarabi Mincho", "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 36px;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.3);
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-  }
-  .columns {
-    .column {
-      h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
-        border-left: solid 5px #aaa;
-        line-height: 1;
-        padding-left: 15px;
-      }
-    }
-  }
-  .today {
-    margin-bottom: 60px;
-  }
-}
-
-.title {
-  font-family: "sawarabi Mincho", "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  letter-spacing: 1px;
-  color: #fff;
-  &:first-letter {
-    color: #15b0c2;
-  }
-}
-
-.subtitle {
-  font-family: "sawarabi Mincho", sans-serif;
-  font-weight: 300;
-  font-size: 42px;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-  color: #fff;
-}
-
-.catch {
-  margin-bottom: 3rem;
-  font-size: 24px;
-  div {
-    display: inline-block;
-  }
-}
-
-.links {
-  .button {
-    background: transparent;
-    color: #fff;
-    border-radius: 0;
-    width: 100%;
-    padding: 30px;
-    &:hover {
-      border-color: #15b0c2;
-      color: #15b0c2;
-    }
-  }
-}
-
-.company {
-  position: fixed;
-  right: 30px;
-  bottom: 70px;
-  font-size: 24px;
-  font-weight: bold;
-}
-.tel {
-  position: fixed;
-  right: 30px;
-  bottom: 50px;
-}
-.address {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-}
-
-@media (max-width: 640px) {
-  .wrapper {
-    width: 100%;
-    overflow-x: hidden;
-  }
-  .container {
-    // display: block;
-    // margin-top: 45px;
-    .columns {
-      padding: 0 30px;
-    }
-  }
-  .title {
-    font-size: 36px;
-  }
-  .subtitle {
-    font-size: 20px;
-  }
-  .catch {
-    font-size: 18px;
-  }
-  .links {
-    padding: 0 30px;
-  }
-}
- */
-</style>
+<style lang="scss" scoped></style>
