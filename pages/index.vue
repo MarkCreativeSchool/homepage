@@ -62,7 +62,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "つくば市のプログラミングスクール。主にMineCraftを使って、Lua・Python・Javaなどでゲームを作りながらプログラミングを学びます / 毎週月水土 / 授業料: 週1-5,500円(税込) 週2-8,500円(税込) / 無料体験随時募集中！！",
+            "つくば市のプログラミングスクール。主にMineCraftを使って、Lua・Python・Javaなどでゲームを作りながらプログラミングを学びます / 毎週月水土 / 授業料: 週1-6,000円(税込) 週2-10,000円(税込) / 無料体験随時募集中！！",
         },
         { hid: "og:site_name", property: "og:site_name", content: "MarkCreativeSchool - つくば市のプログラミングスクール" },
         { hid: "og:type", property: "og:type", content: "website" },
