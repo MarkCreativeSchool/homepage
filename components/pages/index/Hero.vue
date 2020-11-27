@@ -68,5 +68,27 @@ export default {
       margin: 40px 0 80px 0;
     }
   }
+  @media screen and (max-width: 767px) {
+    .decorations {
+      .circle-top-left {
+        top: -100px;
+        left: -100px;
+        width: 200px;
+      }
+      .circle-top-right {
+        top: -100px;
+        right: -100px;
+        width: 200px;
+      }
+    }
+    .hero-content {
+      h1 {
+        font-size: 32px;
+      }
+      .headline {
+        font-size: 50px;
+      }
+    }
+  }
 }
 </style>

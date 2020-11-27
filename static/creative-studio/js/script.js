@@ -13,7 +13,6 @@ jQuery(function($) {
 })
 
 const a = function($) {
-  console.log("AAA:")
   const $window = $(window)
   const windowsize = $(window).width()
 
@@ -28,7 +27,6 @@ const a = function($) {
   })
 
   $(window).on("scroll", function() {
-    console.log("scroll")
     if ($(this).scrollTop() >= 80) {
       $("header").addClass("header-appear")
     } else {

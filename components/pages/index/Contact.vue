@@ -9,14 +9,13 @@
             </div>
             <div class="text-center text-md-left">
               <!--Address-->
-              <p class="mb-3">茨城県つくば市天久保2丁目14-2 つくばイーストビル201</p>
+              <p class="mb-3">住所 : 茨城県つくば市天久保2丁目14-2 つくばイーストビル201</p>
               <!--Phone-->
-              <p class="mb-3">Telephone : 029-875-7647</p>
+              <p style="font-size: 22px; font-weight: bold;">Tel : <a href="tel:029-875-7647">029-875-7647</a></p>
+              <p class="mb-3">※スタッフが不在の場合は折り返しお電話をさせていただきます</p>
 
               <!--Email-->
-              <p class="mb-3">
-                Email: <a href="mailto:markcreativeschool@gmail.com" class="color-black">markcreativeschool@gmail.com</a>
-              </p>
+              <p class="mb-3">Email: <a href="mailto:markcreativeschool@gmail.com" class="color-black">markcreativeschool@gmail.com</a></p>
 
               <!--Timing-->
               <!--

@@ -5,17 +5,17 @@
         <div class="col-md-12 col-sm-12 text-center">
           <ul class="footer-icons mb-4">
             <li>
-              <a href="javascript:void(0)" class="wow fadeInUp facebook">
+              <a href="https://www.facebook.com/MarkCreativeSchool/" class="wow fadeInUp facebook" target="_blank">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li>
-              <a href="javascript:void(0)" class="wow fadeInDown twitter">
+              <a href="https://twitter.com/m_c_school" class="wow fadeInDown twitter" target="_blank">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="javascript:void(0)" class="wow fadeInUp instagram">
+              <a href="https://www.instagram.com/mark_creative_school/" class="wow fadeInUp instagram" target="_blank">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
