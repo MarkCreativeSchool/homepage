@@ -14,6 +14,7 @@
     <Quote />
     <WorkStarts />
     <Pricing />
+    <Covid />
     <!--
     <Clients />
     -->
@@ -28,30 +29,32 @@
 import Loading from "../components/pages/index/Loading"
 import Header from "../components/pages/index/Header"
 import Hero from "../components/pages/index/Hero"
-import MainSection from "../components/pages/index/MainSection"
 import About from "../components/pages/index/About"
 import AboutBoxes from "../components/pages/index/AboutBoxes"
-import Team from "../components/pages/index/Team"
 import Quote from "../components/pages/index/Quote"
 import WorkStarts from "../components/pages/index/WorkStarts"
 import Pricing from "../components/pages/index/Pricing"
-import Clients from "../components/pages/index/Clients"
-import Blog from "../components/pages/index/Blog"
+import Covid from "../components/pages/index/Covid"
 import Contact from "../components/pages/index/Contact"
+// import MainSection from "../components/pages/index/MainSection"
+// import Team from "../components/pages/index/Team"
+// import Clients from "../components/pages/index/Clients"
+// import Blog from "../components/pages/index/Blog"
 export default {
   components: {
     Loading,
     Header,
     Hero,
-    MainSection,
+    // MainSection,
     About,
     AboutBoxes,
-    Team,
+    // Team,
     Quote,
     WorkStarts,
     Pricing,
-    Clients,
-    Blog,
+    // Clients,
+    // Blog,
+    Covid,
     Contact,
   },
   head() {

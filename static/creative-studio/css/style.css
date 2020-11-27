@@ -47,6 +47,10 @@
 /* ===================================
     General
 ====================================== */
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;

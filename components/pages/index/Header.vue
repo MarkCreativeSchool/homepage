@@ -15,6 +15,7 @@
             <li class="nav-item"><a href="#about" class="scroll nav-link">特徴</a></li>
             <li class="nav-item"><a href="#work" class="scroll nav-link">写真</a></li>
             <li class="nav-item"><a href="#pricing" class="scroll nav-link">料金</a></li>
+            <li class="nav-item"><a href="#covid" class="scroll nav-link">コロナウイルス対策</a></li>
             <!--
             <li class="nav-item"><a href="#clients" class="scroll nav-link">clients</a></li>
             <li class="nav-item"><a href="#blog" class="scroll nav-link">blog</a></li>
@@ -72,6 +73,7 @@
             <li class="nav-item"><a href="#clients" class="scroll nav-link">clients</a></li>
             <li class="nav-item"><a href="#blog" class="scroll nav-link">blog</a></li>
             -->
+            <li class="nav-item"><a href="#covid" class="scroll nav-link">コロナウイルス対策</a></li>
             <li class="nav-item"><a href="#contact" class="scroll nav-link">お問い合わせ</a></li>
           </ul>
         </nav>

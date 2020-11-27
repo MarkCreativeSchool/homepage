@@ -59,7 +59,7 @@ export default {
     h1 {
       color: rgb(241, 195, 15);
       font-size: 40px;
-      font-weight: 200;
+      font-weight: 700;
     }
     .headline {
       font-size: 70px;
