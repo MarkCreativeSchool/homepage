@@ -72,7 +72,7 @@ export default {
           hid: "og:description",
           property: "og:description",
           content:
-            "つくば市のプログラミングスクール。主にMineCraftを使って、Lua・Python・Javaなどでゲームを作りながらプログラミングを学びます / 毎週月水土 / 授業料: 週1-5,500円(税込) 週2-8,500円(税込) / 無料体験随時募集中！！",
+            "つくば市のプログラミングスクール。主にMineCraftを使って、Lua・Python・Javaなどでゲームを作りながらプログラミングを学びます / 毎週月水土 / 授業料: 週1-6,000円(税込) 週2-10,000円(税込) / 無料体験随時募集中！！",
         },
         { hid: "og:image", property: "og:image", content: "https://example.com/img/ogp/common.jpg" },
       ],
