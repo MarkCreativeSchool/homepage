@@ -49,7 +49,7 @@
               </div>
             </div>
             <div class="price">
-              <h2 class="position-relative"><span class="dollar">¥</span>10,000<span class="month">/ 月</span></h2>
+              <h2 class="position-relative"><span class="dollar">¥</span>9,000<span class="month">/ 月</span></h2>
             </div>
             <div class="price-description">
               <p>月 17:00〜</p>
