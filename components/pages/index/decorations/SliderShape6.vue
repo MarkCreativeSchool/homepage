@@ -1,5 +1,7 @@
 <template>
-  <img src="creative-studio/img/slider-shape6.png" alt="" class="slider-shape6" />
+  <div class="slider-shape6">
+    <img src="creative-studio/img/slider-shape6.png" alt="" />
+  </div>
 </template>
 
 <script>

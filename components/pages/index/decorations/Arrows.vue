@@ -1,5 +1,7 @@
 <template>
-  <img src="creative-studio/img/arrows.png" alt="" class="arrows" />
+  <div class="arrows">
+    <img src="creative-studio/img/arrows.png" alt="" />
+  </div>
 </template>
 
 <script>
@@ -8,8 +10,8 @@ export default {
   name: "Arrows",
   mounted() {
     TweenMax.from(".arrows", 4, {
-      x: "+=40",
-      ease: "linear",
+      x: -40,
+      ease: "ease",
       yoyo: true,
       repeat: -1,
     })
@@ -19,6 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 .arrows {
+  position: absolute;
   top: 160px;
   left: 160px;
   width: 60px;

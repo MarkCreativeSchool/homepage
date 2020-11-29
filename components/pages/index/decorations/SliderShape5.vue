@@ -24,6 +24,7 @@ export default {
   left: 100px;
   width: 40px;
   @media screen and (max-width: 767px) {
+    display: none;
     bottom: 80px;
     left: 40px;
     width: 40px;

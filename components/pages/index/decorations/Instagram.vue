@@ -32,7 +32,7 @@ export default {
   left: 50%;
   width: 40px;
   @media screen and (max-width: 767px) {
-    bottom: 80px;
+    bottom: 160px;
     left: 50%;
     width: 40px;
   }

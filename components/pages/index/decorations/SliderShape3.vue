@@ -1,5 +1,7 @@
 <template>
-  <img src="creative-studio/img/slider-shape3.png" alt="" class="slider-shape3" />
+  <div class="slider-shape3">
+    <img src="creative-studio/img/slider-shape3.png" alt="" />
+  </div>
 </template>
 
 <script>
@@ -7,8 +9,8 @@ import { TweenMax, Linear } from "gsap"
 export default {
   name: "SliderShape3",
   mounted() {
-    TweenMax.to(".decorations .slider-shape3", 20, {
-      rotation: "720",
+    TweenMax.to(".slider-shape3", 20, {
+      rotation: 720,
       ease: Linear.easeNone,
       yoyoEase: true,
       repeat: -1,
