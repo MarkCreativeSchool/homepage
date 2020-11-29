@@ -5,7 +5,17 @@
         <img src="creative-studio/img/circle-center.png" alt="" class="circle-center" />
         <img src="creative-studio/img/circle-top-left.png" alt="" class="circle-top-left" />
         <img src="creative-studio/img/circle-top-right.png" alt="" class="circle-top-right" />
-        <img src="creative-studio/img/arrows.png" alt="" class="arrows" />
+        <Arrows />
+        <SliderShape2 />
+        <SliderShape3 />
+        <SliderShape5 />
+        <SliderShape6 />
+        <Instagram />
+        <Facebook />
+        <Twitter />
+        <!--
+        <img src="creative-studio/img/slider-shape6.png" alt="" class="slider-shape6" />
+        -->
       </div>
       <div class="hero-content">
         <h1>Mark Creative School</h1>
@@ -21,16 +31,25 @@
 </template>
 
 <script>
-import { TweenMax } from "gsap"
+import Arrows from "./decorations/Arrows"
+import SliderShape2 from "./decorations/SliderShape2"
+import SliderShape3 from "./decorations/SliderShape3"
+import SliderShape5 from "./decorations/SliderShape5"
+import SliderShape6 from "./decorations/SliderShape6"
+import Instagram from "./decorations/Instagram"
+import Facebook from "./decorations/Facebook"
+import Twitter from "./decorations/Twitter"
 export default {
   name: "Hero",
-  mounted() {
-    TweenMax.from(".decorations .arrows", 5, {
-      x: 40,
-      ease: "linear",
-      yoyo: true,
-      repeat: -1,
-    })
+  components: {
+    Arrows,
+    SliderShape2,
+    SliderShape3,
+    SliderShape5,
+    SliderShape6,
+    Instagram,
+    Facebook,
+    Twitter,
   },
 }
 </script>
@@ -62,11 +81,6 @@ export default {
       right: -200px;
       width: 400px;
     }
-    .arrows {
-      top: 160px;
-      left: 160px;
-      width: 60px;
-    }
   }
   .hero-content {
     max-width: 480px;
@@ -94,11 +108,6 @@ export default {
         top: -100px;
         right: -100px;
         width: 200px;
-      }
-      .arrows {
-        top: 40px;
-        left: 40px;
-        width: 60px;
       }
     }
     .hero-content {
