@@ -9,7 +9,7 @@
             </div>
             <div class="text-center text-md-left">
               <!--Address-->
-              <p class="mb-3">住所 : 茨城県つくば市天久保2丁目14-2 つくばイーストビル201</p>
+              <p class="mb-3">住所 : 茨城県つくば市天久保2丁目14-2 つくばイーストビル202</p>
               <!--Phone-->
               <p style="font-size: 22px; font-weight: bold;">Tel : <a href="tel:029-875-7647">029-875-7647</a></p>
               <p class="mb-3">※スタッフが不在の場合は折り返しお電話をさせていただきます</p>
