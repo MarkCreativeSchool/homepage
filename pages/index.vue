@@ -14,7 +14,9 @@
     <Quote />
     <WorkStarts />
     <Pricing />
+    <!--
     <Covid />
+    -->
     <!--
     <Clients />
     -->
