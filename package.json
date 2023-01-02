@@ -23,7 +23,7 @@
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "gsap": "^3.5.1",
-    "nuxt": "^2.4.0"
+    "nuxt": "^3.0.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
@@ -46,6 +46,6 @@
     "prettier": "^2.3.2",
     "sass-loader": "^10.2.0",
     "webdriverio": "^7.7.4",
-    "webpack": "^4.46.0"
+    "webpack": "^5.75.0"
   }
 }
