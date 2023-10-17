@@ -1,0 +1,14 @@
+@import "node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "node_modules/bulma/sass/utilities/functions.sass";
+
+@import "node_modules/bulma/bulma";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+  // background: #f1f0f0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+}

@@ -1,12 +1,8 @@
 <template>
-  <div class="rs-looped rs-slideloop facebook" data-easing="Power0.easeInOut" data-speed="12" data-xs="0" data-xe="0" data-ys="-10" data-ye="60">
-    <div class="animated-wrap slider-social icon-small">
-      <div class="animated-element icon-box-large bg-pink facebook-bg-hvr d-flex justify-content-center align-items-center">
-        <a class="facebook-text-hvr" href="https://www.facebook.com/MarkCreativeSchool/" target="_blank">
-          <i class="la la-facebook font-20" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div>
+  <div class="facebook" data-easing="Power0.easeInOut" data-speed="12" data-xs="0" data-xe="0" data-ys="-10" data-ye="60">
+    <a class="facebook-text-hvr" href="https://www.facebook.com/MarkCreativeSchool/" target="_blank">
+      <i class="lab la-facebook-f font-20" aria-hidden="true"></i>
+    </a>
   </div>
 </template>
 
