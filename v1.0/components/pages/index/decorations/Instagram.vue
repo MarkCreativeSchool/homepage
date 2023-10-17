@@ -14,13 +14,18 @@
 import { TweenMax } from "gsap"
 export default {
   name: "Instagram",
+  props: {
+    tween: { type: Boolean, required: false,  default: false },
+  },
   mounted() {
-    TweenMax.from(".instagram", 2, {
-      x: -20,
-      ease: "ease",
-      yoyo: true,
-      repeat: -1,
-    })
+    if (!this.tween) {
+      TweenMax.from(".instagram", 2, {
+        x: -20,
+        ease: "ease",
+        yoyo: true,
+        repeat: -1,
+      })
+    }
   },
 }
 </script>

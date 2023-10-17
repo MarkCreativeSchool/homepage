@@ -14,14 +14,19 @@
 import { TweenMax } from "gsap"
 export default {
   name: "Facebook",
+  props: {
+    tween: { type: Boolean, required: false,  default: false },
+  },
   mounted() {
-    TweenMax.from(".facebook", 3, {
-      x: 5,
-      y: -20,
-      ease: "linear",
-      yoyo: true,
-      repeat: -1,
-    })
+    if (!this.tween) {
+      TweenMax.from(".facebook", 3, {
+        x: 5,
+        y: -20,
+        ease: "linear",
+        yoyo: true,
+        repeat: -1,
+      })
+    }
   },
 }
 </script>
