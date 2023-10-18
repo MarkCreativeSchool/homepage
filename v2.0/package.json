@@ -17,7 +17,9 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bulma": "^0.9.4",
-    "gsap": "^3.12.2"
+    "gsap": "^3.12.2",
+    "wowjs": "^1.1.3"
   }
 }

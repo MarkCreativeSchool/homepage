@@ -42,7 +42,8 @@ export default {
 
 <style lang="scss" scoped>
 #global-header {
-  position: fixed;
+  position: absolute;
+  bottom: 0;
   z-index: 100;
   width: 100%;
   display: flex;
@@ -50,6 +51,7 @@ export default {
   height: 60px;
   padding: 20px;
   border-bottom: solid 1px #ddd;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.15);
   background: #fff;
   .brand {
     width: 200px;

@@ -1,6 +1,6 @@
 <template>
   <div class="global-footer">
-    MARK 情報技術・プログラミング専門スクール
+    情報技術・プログラミング専門スクール MARK
   </div>
 </template>
 
