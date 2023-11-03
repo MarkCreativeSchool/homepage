@@ -1,5 +1,5 @@
 <template>
-  <img src="creative-studio/img/slider-shape5.png" alt="" class="slider-shape5" />
+  <img src="/creative-studio/img/slider-shape5.png" alt="" class="slider-shape5" />
 </template>
 
 <script>

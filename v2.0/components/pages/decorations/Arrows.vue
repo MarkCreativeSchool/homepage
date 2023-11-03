@@ -1,6 +1,6 @@
 <template>
   <div class="arrows">
-    <img src="creative-studio/img/arrows.png" alt="" />
+    <img src="/creative-studio/img/arrows.png" alt="" />
   </div>
 </template>
 

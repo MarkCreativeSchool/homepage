@@ -1,6 +1,6 @@
 <template>
   <div class="slider-shape6">
-    <img src="creative-studio/img/slider-shape6.png" alt="" />
+    <img src="/creative-studio/img/slider-shape6.png" alt="" />
   </div>
 </template>
 

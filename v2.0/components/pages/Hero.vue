@@ -2,9 +2,9 @@
   <section id="hero" class="p-0 h-100vh cursor-light">
     <div class="hero-content-wrapper h-100vh">
       <div class="decorations">
-        <img src="creative-studio/img/circle-center.png" alt="" class="circle-center" />
-        <img src="creative-studio/img/circle-top-left.png" alt="" class="circle-top-left" />
-        <img src="creative-studio/img/circle-top-right.png" alt="" class="circle-top-right" />
+        <img src="/creative-studio/img/circle-center.png" alt="" class="circle-center" />
+        <img src="/creative-studio/img/circle-top-left.png" alt="" class="circle-top-left" />
+        <img src="/creative-studio/img/circle-top-right.png" alt="" class="circle-top-right" />
         <Arrows />
         <SliderShape2 />
         <SliderShape3 />
