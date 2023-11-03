@@ -1,23 +1,28 @@
-# homepage
+# MARKのホームページ
+## 開発環境
+### 言語など
+- nodejs:20.9.0
+- Nuxt:3.8
 
-> My flawless Nuxt.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+### 初回
+以下のコマンドでnodejsのバージョンが20.9.0であることを確認
+```shell
+node --version
+```
+モジュールをインストール
+```bash
+cd v2.0
+npm install
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
-# homepage
+### 起動
+```shell
+make dev
+```
+もしくは
+```shell
+cd v2.0 && npm run dev
+```
+
+http://localhost:3333
+へアクセス
