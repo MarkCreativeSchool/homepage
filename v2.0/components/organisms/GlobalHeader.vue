@@ -120,5 +120,10 @@ export default {
       padding: 4px 20px;
     }
   }
+  @media screen and (max-width: 888px) {
+    .side {
+      display: none;
+    }
+  }
 }
 </style>
