@@ -37,6 +37,7 @@ export default {
   bottom: 260px;
   right: 120px;
   width: 40px;
+  border: solid 20px; #000;
   @media screen and (max-width: 767px) {
     bottom: 180px;
     right: 60px;

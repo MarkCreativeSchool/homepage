@@ -33,10 +33,15 @@ export default {
   bottom: 260px;
   right: 120px;
   width: 40px;
+  height: 40px;
+  text-align: center;
+  border: solid 8px #4267b2;
+  border-radius: 50%;
   @media screen and (max-width: 767px) {
     bottom: 180px;
     right: 60px;
     width: 40px;
+    height: 40px;
   }
 }
 </style>

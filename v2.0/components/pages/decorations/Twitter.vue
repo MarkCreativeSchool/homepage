@@ -3,7 +3,7 @@
     <div class="animated-wrap slider-social icon-small">
       <div class="animated-element icon-box-large-two bg-yellow twitter-bg-hvr d-flex justify-content-center align-items-center">
         <a class="twitter-text-hvr" href="https://twitter.com/m_c_school" target="_blank">
-          <i class="fab fa-twitter font-20" aria-hidden="true"></i>
+          <i class="la la-twitter font-20" aria-hidden="true"></i>
         </a>
       </div>
     </div>
@@ -37,11 +37,21 @@ export default {
   position: absolute;
   bottom: 200px;
   left: 80px;
-  width: 40px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  border: solid 5px #1da1f2;
+  a {
+    color: #1da1f2;
+  }
   @media screen and (max-width: 767px) {
     bottom: 160px;
     left: 60px;
     width: 40px;
+    height: 40px;
+    font-size: 18px;
   }
 }
 </style>

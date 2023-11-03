@@ -1,29 +1,26 @@
 <template>
-  <section id="about">
+  <section id="feature">
     <div class="container">
       <div class="columns">
-        <div v-if="false" class="column is-6">
+        <div class="column is-1"></div>
+        <div class="column is-5">
           <div class="rare-box"></div>
-          <img src="/images/about.jpg" class="about-img" alt="教室の特徴" />
+          <img src="/images/about.jpg" class="about-img-small position-relative w-100" alt="教室の特徴" />
         </div>
-        <div class="column is-6">
+        <div class="column is-5">
           <div>
-            <h2>MARKについて</h2>
-          </div>
-        </div>
-        <div class="column is-6">
-          <div class="main-title text-lg-left offset-md-1 mb-0 wow fadeInUp" data-wow-delay="300ms">
-            <h2 class="wow fadeInUp font-weight-light" data-wow-delay="400ms">
-              MARKの特徴
+            <h5>教室の<span class="color-blue">特徴</span></h5>
+            <h2>
+              小学校4年生から始めるつくば市のプログラミングスクール
             </h2>
-            <p class="pb-4">プログラミング・情報技術専門のプログラミング教室です。大学の共通試験にも追加されたの情報I以上の本格的な技術が身に付くよう、最先端の技術を研究している講師やIT・プログラミングに特化した講師がレッスンをサポートしています。</p>
-            <p class="pb-4 wow fadeInUp" data-wow-delay="500ms">
-              <span class="color-pink">マインクラフト</span>・<span class="color-pink">競技プログラミング</span>・
-              <span class="color-pink">Webアプリケーション制作</span>を通じてコンピューターリテラシーの学習の機会を提供しています。
+            <p>
+              <span class="color-pink">マインクラフト</span>をベースに<span class="color-pink">競技プログラミング</span>や
+              <span class="color-pink">Webアプリケーション</span>などクリエイティブなデジタルコンテンツ制作のお手伝いをしています
             </p>
-            <p class="pb-4"></p>
-            <p class="pb-4">自社でカリキュラムや学習システムの開発を行っているため、子供たちが無理なく楽しみながら学習ができるようにレッスンを設計しています。</p>
-            <p class="pb-4"></p>
+            <ul>
+              <li>小4〜高校生まで幅広い年齢のお子様が通っています</li>
+              <li>Pythonなどのプログラミング言語を学習します</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -33,20 +30,26 @@
 
 <script>
 export default {
-  name: "About",
+  name: "Feature",
 }
 </script>
 
 <style lang="scss" scoped>
-#about {
-  padding: 40px;
-  h2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
+#feature {
+  padding: 40px 0;
+  h5 {
+    font-size: 20px;
   }
-  .about-image {
-    width: 75%;
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 12px 0;
+  }
+  .color-blue {
+    color: #84a1d2;
+  }
+  ul {
+    margin-top: 20px;
   }
 }
 </style>

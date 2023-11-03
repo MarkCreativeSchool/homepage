@@ -2,12 +2,13 @@
   <div>
     <Hero />
     <Feature />
+    <Quote />
     <Curriculum />
     <Photo />
     <Schedule />
     <Pricing />
     <Contact />
-    <Description />
+    <Description v-if="false" />
   </div>
 </template>
 
@@ -15,6 +16,7 @@
 import Hero from "~/components/pages/Hero"
 import Feature from "~/components/pages/Feature"
 import Curriculum from "~/components/pages/Curriculum"
+import Quote from "~/components/pages/Quote"
 import Photo from "~/components/pages/Photo"
 import Schedule from "~/components/pages/Schedule"
 import Pricing from "~/components/pages/Pricing"
@@ -23,10 +25,10 @@ import Description from "~/components/pages/Description"
 
 export default {
   name: "index",
-  components: { Hero, Feature, Pricing, Photo, Schedule, Curriculum, Contact, Description }
+  components: { Hero, Feature, Pricing, Photo, Schedule, Curriculum, Quote, Contact, Description }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

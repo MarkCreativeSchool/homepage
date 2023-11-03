@@ -13,14 +13,11 @@
         <Instagram />
         <Facebook />
         <Twitter />
-        <!--
-        <img src="creative-studio/img/slider-shape6.png" alt="" class="slider-shape6" />
-        -->
       </div>
       <div class="hero-content">
         <h1>情報・プログラミング専門スクール</h1>
         <div class="headline">MARK</div>
-        <div class="text">
+        <div v-if="false" class="text">
           <div>つくば市のプログラミングスクール</div>
           <div>技術の進歩を止めることはできません。</div>
           <div>できるのはそれに適応することです。</div>
@@ -58,6 +55,7 @@ export default {
 #hero {
   height: 100vh;
   position: relative;
+  box-shadow: #aaa;
   .hero-content-wrapper {
     height: 100vh;
     display: flex;

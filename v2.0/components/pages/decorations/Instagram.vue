@@ -3,7 +3,7 @@
     <div class="animated-wrap slider-social icon-small">
       <div class="animated-element icon-box-small bg-pink-two instagram-bg-hvr d-flex justify-content-center align-items-center">
         <a class="instagram-text-hvr" href="https://www.instagram.com/mark_creative_school/" target="_blank">
-          <i class="fab fa-instagram font-16" aria-hidden="true"></i>
+          <i class="la la-instagram font-16" aria-hidden="true"></i>
         </a>
       </div>
     </div>
@@ -35,11 +35,22 @@ export default {
   position: absolute;
   bottom: 100px;
   left: 50%;
-  width: 40px;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  z-index: 10;
+  border: solid 8px #febdc8;
+  border-radius: 50%;
+  text-align: center;
+  a {
+    color: #febdc8;
+  }
   @media screen and (max-width: 767px) {
     bottom: 160px;
     left: 50%;
     width: 40px;
+    height: 40px;
+    font-size: 16px;
   }
 }
 </style>

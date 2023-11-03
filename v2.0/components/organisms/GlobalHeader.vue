@@ -9,14 +9,14 @@
     <div class="nav">
       <ul>
         <li><a href="#home" class="">ホーム</a></li>
-        <li><a href="#about" class="">特徴</a></li>
-        <li><a href="#work" class="active">写真</a></li>
+        <li><a href="#feature" class="">特徴</a></li>
+        <li><a href="#photo" class="active">写真</a></li>
         <li><a href="#pricing" class="">料金</a></li>
         <li><a href="#contact" class="">お問い合わせ</a></li>
       </ul>
     </div>
     <div class="side">
-      <a href="javascript:void(0)" class="btn-setting btn-hvr-up btn-hvr-whatsapp color-black mr-lg-3 d-none d-lg-block">
+      <a href="tel:029-875-7647">
         <i class="la la-whatsapp"></i> 029-875-7647
       </a>
     </div>
@@ -42,12 +42,13 @@ export default {
 
 <style lang="scss" scoped>
 #global-header {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  top: 0;
   z-index: 100;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 60px;
   padding: 20px;
   border-bottom: solid 1px #ddd;
@@ -66,6 +67,11 @@ export default {
         font-weight: bold;
         font-size: 24px;
       }
+    }
+  }
+  @media screen and (max-width: 888px) {
+    .brand {
+      flex: 1;
     }
   }
   .nav {
@@ -95,6 +101,11 @@ export default {
           }
         }
       }
+    }
+  }
+  @media screen and (max-width: 888px) {
+    .nav {
+      display: none;
     }
   }
   .side {
