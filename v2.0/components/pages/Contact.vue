@@ -2,31 +2,31 @@
   <section id="contact">
     <div class="container">
       <Card>
-        <div class="row mx-lg-0">
-          <div class="col-lg-6 col-md-6 col-sm-12 p-0">
-            <div class="contact-box">
-              <div class="main-title text-center text-md-left mb-4">
-                <h2 class="font-weight-normal">お問い合わせ</h2>
-              </div>
-              <div class="text-center text-md-left">
-                <!--Address-->
-                <p class="mb-3">住所 : 茨城県つくば市天久保2丁目14-2 つくばイーストビル202</p>
-                <!--Phone-->
-                <p style="font-size: 22px; font-weight: bold;">Tel : <a href="tel:029-875-7647">029-875-7647</a></p>
-                <p class="mt-3 mb-3">※不在の場合は <a href="tel:080-4174-0317">080-4174-0317</a> もしくは折り返しお電話をさせていただきます</p>
-
-                <!--Email-->
-                <p class="mb-3">Email: <a href="mailto:mcs@mark-inc.net" class="color-black">mcs@mark-inc.net</a></p>
-
-                <!--Timing-->
-                <!--
-                <p class="mb-0">Mon-Sat: 9am to 6pm</p>
-                -->
+        
+        <div class="contact-box">
+          <img src="../../composables/map.png">
+          <div class="contact-detail">
+            <div class="main-title">
+              <h2 class="font-weight-normal">お問い合わせ</h2>
+            </div>
+            <!-- address -->
+            <div class="content address">
+              <i class="las la-map-marked"></i>
+              <p>〒300-0005　茨城県つくば市天久保2丁目14-2 つくばイーストビル202</p>
+            </div>
+            <!-- tel -->
+            <div class="content tel">
+              <i class="las la-phone"></i>
+              <div class="tel-detail">
+                <p style="font-size: 22px; font-weight: bold;"><a href="tel:029-875-7647">029-875-7647</a></p>
+                <p style="font-size: 14px;">※不在の場合は <a href="tel:080-4174-0317">080-4174-0317</a> もしくは折り返しお電話をさせていただきます</p>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 p-0 col-map box-shadow-map">
-            <div id="google-map" class="bg-light-gray map"></div>
+            <!-- email -->
+            <div class="content email">
+              <i class="las la-envelope"></i>
+              <p>mcs@mark-inc.net</p>
+            </div>
           </div>
         </div>
       </Card>
@@ -46,4 +46,41 @@ export default {
 #contact {
   padding: 40px 0;
 }
+
+.contact-box {
+  position: relative;
+}
+
+.contact-detail {
+  position: absolute;
+  width: 60%;
+  height: 250px;
+  background-color: white;
+  top: 30px;
+  left: 30px;
+  opacity: 0.8;
+}
+
+.main-title {
+  padding: 20px 0px 10px 20px;
+  color: black;
+}
+
+.content {
+  color: black;
+  // padding-left: 20px;
+  display: flex;
+  margin: 10px 20px;
+}
+
+.content i {
+  font-size: 32px;
+}
+
+.content p {
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+
 </style>
