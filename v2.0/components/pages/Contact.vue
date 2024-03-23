@@ -84,6 +84,7 @@ export default defineComponent( {
   @media screen and (max-width:800px) {
     width: 90%;
     height: 40%;
+    margin: 0 auto;
   }
   background-color: white;
   top: 30px;
