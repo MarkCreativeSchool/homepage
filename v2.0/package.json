@@ -20,11 +20,8 @@
     "animate.css": "^4.1.1",
     "bulma": "^0.9.4",
     "gsap": "^3.12.2",
-<<<<<<< HEAD
     "vue3-google-map": "^0.20.0",
-=======
     "vue-gtag": "^2.0.1",
->>>>>>> develop
     "wowjs": "^1.1.3"
   }
 }
