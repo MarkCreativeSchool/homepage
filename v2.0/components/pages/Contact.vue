@@ -4,7 +4,8 @@
       <Card>
         
         <div class="contact-box">
-          <img src="../../composables/map.png">
+          <GoogleMap api-key="AIzaSyAgIfLQi8KTxTJahilcem6qHusV-V6XXjw" class="map" :center="center" :zoom="15" @click="handleMapClick">
+            <Marker :options=" { position:center } " />
           <div class="contact-detail">
             <div class="main-title">
               <h2 class="font-weight-normal">お問い合わせ</h2>
@@ -12,14 +13,14 @@
             <!-- address -->
             <div class="content address">
               <i class="las la-map-marked"></i>
-              <p>〒300-0005　茨城県つくば市天久保2丁目14-2 つくばイーストビル202</p>
+              <p>〒305-0005　<br>茨城県つくば市天久保2丁目14-2 つくばイーストビル202</p>
             </div>
             <!-- tel -->
             <div class="content tel">
               <i class="las la-phone"></i>
               <div class="tel-detail">
-                <p style="font-size: 22px; font-weight: bold;"><a href="tel:029-875-7647">029-875-7647</a></p>
-                <p style="font-size: 14px;">※不在の場合は <a href="tel:080-4174-0317">080-4174-0317</a> もしくは折り返しお電話をさせていただきます</p>
+                <p style="font-weight: bold;"><a href="tel:029-875-7647">029-875-7647</a></p>
+                <p style="">※不在の場合は <a href="tel:080-4174-0317">080-4174-0317</a> もしくは、折り返しお電話をさせていただきます。</p>
               </div>
             </div>
             <!-- email -->
@@ -28,6 +29,7 @@
               <p>mcs@mark-inc.net</p>
             </div>
           </div>
+        </GoogleMap>
         </div>
       </Card>
     </div>
@@ -36,10 +38,23 @@
 
 <script>
 import Card from "~/components/molecules/Card"
-export default {
+import { defineComponent } from "vue";
+import { GoogleMap, Marker } from "vue3-google-map"
+export default defineComponent( {
   name: "Contact",
-  components: { Card },
-}
+  components: { Card, GoogleMap, Marker },
+  setup() {
+    const center = {lat:36.0964048, lng: 140.1104909};
+    const handleMapClick = () => {
+      const lat = 36.0964048;
+      const lng = 140.1104909;
+      const mapURL = `https://www.google.com/maps?q=${lat},${lng}`;
+      window.open(mapURL, "_blank")
+    }
+    
+    return { center, handleMapClick };
+  }
+})
 </script>
 
 <style lang="scss" scoped>
@@ -51,10 +66,18 @@ export default {
   position: relative;
 }
 
+.map {
+  // position: relative;
+  width: 100%;
+  height: 500px;
+
+}
+
+
 .contact-detail {
   position: absolute;
-  width: 60%;
-  height: 250px;
+  width: 50%;
+  height: 50%;
   background-color: white;
   top: 30px;
   left: 30px;
@@ -71,15 +94,27 @@ export default {
   // padding-left: 20px;
   display: flex;
   margin: 10px 20px;
+  @media screen and (max-width: 800px) {
+    margin: 8px 10px;
+    
+  }
 }
 
 .content i {
-  font-size: 32px;
+  font-size: 175%;
+  @media screen and (max-width: 800px) {
+    font-size: 150%;
+  }
 }
 
 .content p {
-  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-size: 90%;
   padding-left: 10px;
+  @media screen and (max-width: 800px) {
+    font-size: 75%;
+  }
 }
 
 
