@@ -5,13 +5,14 @@
     </div>
     <div class="container">
       <div class="grid">
-        <div v-for="i in items" class="grid-items">
+        <div v-for="(item, index) in items" :key="index" :class="{ 'second-row': index >= 5 }" class="grid-items" @click="openModal(index)">
           <div class="g-image">
-            <img :src="`/images/g/${i}`" />
+            <img :src="`/images/g/${item}`" :style="{ opacity: (index >= 5) ? 1 - (index - 4) * 0.1 : 1, maskImage: (index >= 5) ? gradientMask : 'none' }" />
           </div>
         </div>
       </div>
     </div>
+    <nuxt-link to="/photo" class="more">もっと見る</nuxt-link>
   </section>
 </template>
 
@@ -20,8 +21,13 @@ export default {
   name: "Photo",
   data() {
     return {
-      items: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg"]
+      items: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.JPG", "10.JPG"],
+      isModalOpen: false,
+      selectedImage: null,
+      gradientMask: "linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)",
     }
+  },
+  methods: {
   },
 }
 </script>
@@ -30,31 +36,50 @@ export default {
 #photo {
   padding: 40px 0;
   background: #fff;
+
   .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
-    .g-image {
-      img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
+
+    .grid-items {
+      position: relative;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .g-image {
+        position: relative;
+        overflow: hidden;
+
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          width: 100%;
+          height: auto;
+          transition: transform 0.3s ease;
+        }
       }
     }
-  }
-  @media screen and (max-width: 922px) {
-    .grid {
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 15px;
+
+    .second-row .g-image img {
+      mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+      mask-size: 100% 101%;
+      mask-position: bottom;
+      mask-repeat: no-repeat;
     }
   }
-  @media screen and (max-width: 767px) {
-    .grid {
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 10px;
-    }
+
+  .more {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #4F393C;
+    font-size: 15px;
   }
 }
 </style>
