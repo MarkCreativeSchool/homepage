@@ -60,6 +60,9 @@ export default defineComponent( {
 <style lang="scss" scoped>
 #contact {
   padding: 40px 0;
+  @media screen and (max-width:800px) {
+    padding: 0;
+  }
 }
 
 .contact-box {
@@ -78,6 +81,11 @@ export default defineComponent( {
   position: absolute;
   width: 50%;
   height: 50%;
+  @media screen and (max-width:800px) {
+    width: 90%;
+    height: 40%;
+    margin: 0 auto;
+  }
   background-color: white;
   top: 30px;
   left: 30px;

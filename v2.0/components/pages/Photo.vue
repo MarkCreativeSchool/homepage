@@ -24,7 +24,7 @@ export default {
       items: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.JPG", "10.JPG"],
       isModalOpen: false,
       selectedImage: null,
-      gradientMask: "linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)",
+      gradientMask: "linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%)",
     }
   },
   methods: {
@@ -71,13 +71,18 @@ export default {
       mask-size: 100% 101%;
       mask-position: bottom;
       mask-repeat: no-repeat;
+    // 6~10番目の画像の下側を徐々に透明にする
+    .second-row .g-image img {
+      mask-size: 100% 200%; /* マスクサイズを2倍に設定 */
+      mask-position: bottom; /* マスクの位置を下部に設定 */
+      mask-repeat: no-repeat; /* マスクを繰り返ししないように設定 */
     }
   }
 
   .more {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 20px; /* 調整可能なマージン */
     color: #4F393C;
     font-size: 15px;
   }

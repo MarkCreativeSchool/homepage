@@ -21,6 +21,22 @@
         </div>
       </transition>
       <nuxt-link to="/" class="more">トップに戻る</nuxt-link>
+      <div class="grid">
+        <div v-for="(item, index) in items" :key="index" class="grid-items" @click="openModal(index)">
+          <div class="g-image">
+            <img :src="`/images/g/${item}`" />
+            <!-- グラデーションの追加 -->
+            </div>
+        </div>
+      </div>
+    <transition name="component-fade">
+      <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
+        <div class="modal-container">
+          <span class="close-button" @click="closeModal">&times;</span>
+          <img :src="`/images/g/${selectedImage}`" class="modal-image" />
+        </div>
+      </div>
+    </transition>
     </section>
   </template>
   
@@ -35,6 +51,14 @@
       }
     },
     methods: {
+      openModal(index) {
+        this.selectedImage = this.items[index];
+        this.isModalOpen = true;
+      },
+      closeModal() {
+        this.isModalOpen = false;
+        this.selectedImage = null;
+      },
     },
   }
   </script>
@@ -77,24 +101,38 @@
       }
     }
     }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 20px;
   
-    // .grid {
-    //   display: grid;
-    //   grid-gap: 20px;
-    // }
+      .grid-items {
+        position: relative;
   
-    // .grid-items {
-    //   position: relative;
-    //   overflow: hidden;
-    // }
+        &:hover {
+          cursor: pointer;
+        }
   
-    // .g-image img {
-    //   display: block;
-    //   max-width: 100%;
-    //   height: auto;
-    //   aspect-ratio: 1 / 1;
-    //   object-fit: cover;
-    // }
+        .g-image {
+          img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  
+    .gradient-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80%;
+      background-image: linear-gradient(180deg, transparent 0%, #FFF 100%);
+    }
   
     .modal-overlay {
       position: fixed;
@@ -152,6 +190,14 @@
     color: #4F393C;
     font-size: 15px;
   }
+    .component-fade-enter-active, .component-fade-leave-active {
+      transition: opacity .5s ease;
+    }
+  
+    .component-fade-enter, .component-fade-leave-to {
+      opacity: 0;
+    }
+  
   }
   </style>
   
