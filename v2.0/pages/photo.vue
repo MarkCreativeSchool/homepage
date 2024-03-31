@@ -173,6 +173,10 @@
     margin-top: 20px;
     color: #4F393C;
     font-size: 15px;
+    transition: .3s;
+    &:hover {
+      color: #dc143c
+    }
   }
     .component-fade-enter-active, .component-fade-leave-active {
       transition: opacity .5s ease;
