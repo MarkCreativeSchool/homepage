@@ -25,7 +25,6 @@ export default {
       isModalOpen: false,
       selectedImage: null,
       gradientMask: "linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%)",
-
     }
   },
   methods: {
@@ -67,6 +66,11 @@ export default {
       }
     }
 
+    .second-row .g-image img {
+      mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+      mask-size: 100% 101%;
+      mask-position: bottom;
+      mask-repeat: no-repeat;
     // 6~10番目の画像の下側を徐々に透明にする
     .second-row .g-image img {
       mask-size: 100% 200%; /* マスクサイズを2倍に設定 */
@@ -82,5 +86,6 @@ export default {
     color: #4F393C;
     font-size: 15px;
   }
+}
 }
 </style>
