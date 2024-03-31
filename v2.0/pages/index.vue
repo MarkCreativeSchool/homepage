@@ -9,6 +9,7 @@
     <Pricing />
     <Contact />
     <Description v-if="false" />
+    <Parking />
   </div>
 </template>
 
@@ -22,10 +23,11 @@ import Schedule from "~/components/pages/Schedule"
 import Pricing from "~/components/pages/Pricing"
 import Contact from "~/components/pages/Contact"
 import Description from "~/components/pages/Description"
+import Parking from "~/components/pages/Parking"
 
 export default {
   name: "index",
-  components: { Hero, Feature, Pricing, Photo, Schedule, Curriculum, Quote, Contact, Description }
+  components: { Hero, Feature, Pricing, Photo, Schedule, Curriculum, Quote, Contact, Description, Parking }
 }
 </script>
 
