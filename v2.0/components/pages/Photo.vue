@@ -45,10 +45,6 @@ export default {
     .grid-items {
       position: relative;
 
-      &:hover {
-        cursor: pointer;
-      }
-
       .g-image {
         position: relative;
         overflow: hidden;
@@ -86,6 +82,10 @@ export default {
     margin-top: 20px; /* 調整可能なマージン */
     color: #4F393C;
     font-size: 15px;
+    transition: .3s;
+    &:hover {
+      color: #dc143c
+    }
   }
 }
 </style>
