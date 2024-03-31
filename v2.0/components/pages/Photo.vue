@@ -78,14 +78,14 @@ export default {
       mask-repeat: no-repeat; /* マスクを繰り返ししないように設定 */
     }
   }
+}
 
-  .more {
+.more {
     display: flex;
     justify-content: center;
     margin-top: 20px; /* 調整可能なマージン */
     color: #4F393C;
     font-size: 15px;
   }
-}
 }
 </style>
