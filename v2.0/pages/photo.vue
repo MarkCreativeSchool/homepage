@@ -21,22 +21,6 @@
         </div>
       </transition>
       <nuxt-link to="/" class="more">トップに戻る</nuxt-link>
-      <div class="grid">
-        <div v-for="(item, index) in items" :key="index" class="grid-items" @click="openModal(index)">
-          <div class="g-image">
-            <img :src="`/images/g/${item}`" />
-            <!-- グラデーションの追加 -->
-            </div>
-        </div>
-      </div>
-    <transition name="component-fade">
-      <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
-        <div class="modal-container">
-          <span class="close-button" @click="closeModal">&times;</span>
-          <img :src="`/images/g/${selectedImage}`" class="modal-image" />
-        </div>
-      </div>
-    </transition>
     </section>
   </template>
   
@@ -189,6 +173,10 @@
     margin-top: 20px;
     color: #4F393C;
     font-size: 15px;
+    transition: .3s;
+    &:hover {
+      color: #dc143c
+    }
   }
     .component-fade-enter-active, .component-fade-leave-active {
       transition: opacity .5s ease;
