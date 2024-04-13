@@ -4,7 +4,7 @@
       <Card>
         
         <div class="contact-box">
-          <GoogleMap api-key="AIzaSyAgIfLQi8KTxTJahilcem6qHusV-V6XXjw" class="map" :center="center" :zoom="15" @click="handleMapClick">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12895.521369638956!2d140.0914364871582!3d36.09640479999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60220d0ad123dbc9%3A0x3674818813acc112!2z5bCP44O75Lit44O76auY55Sf5ZCR44GRIOaDheWgseODu-ODl-ODreOCsOODqeODn-ODs-OCsOWwgumWgOOCueOCr-ODvOODq01BUks!5e0!3m2!1sja!2sjp!4v1712378862481!5m2!1sja!2sjp" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             <Marker :options=" { position:center } " />
           <div class="contact-detail">
             <div class="main-title">
@@ -29,7 +29,7 @@
               <p>mcs@mark-inc.net</p>
             </div>
           </div>
-        </GoogleMap>
+          </iframe>
         </div>
       </Card>
     </div>
@@ -73,6 +73,7 @@ export default defineComponent( {
   // position: relative;
   width: 100%;
   height: 500px;
+  border: 0;
 
 }
 
