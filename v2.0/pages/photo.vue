@@ -1,51 +1,57 @@
 <template>
-    <section id="photo">
-      <div class="container">
-        <h2 class="guide">写真</h2>
-      </div>
-      <div class="container">
-        <div class="grid">
-          <div v-for="(item, index) in items" :key="index" class="grid-items" @click="openModal(index)">
-            <div class="g-image">
-              <img :src="`/images/g/${item}`" />
-            </div>
+  <section id="photo">
+    <div class="container">
+      <h2 class="guide">写真</h2>
+    </div>
+    <div class="container">
+      <div class="grid">
+        <div v-for="(item, index) in items" :key="index" class="grid-items" @click="openModal(index)">
+          <div class="g-image">
+            <img :src="`/images/g/${item}`" />
           </div>
         </div>
       </div>
-      <transition name="component-fade">
-        <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
-          <div class="modal-container">
-            <span class="close-button" @click="closeModal">&times;</span>
-            <img :src="`/images/g/${selectedImage}`" class="modal-image" />
-          </div>
+    </div>
+    <transition name="component-fade">
+      <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
+        <div class="modal-container">
+          <span class="close-button" @click="closeModal">&times;</span>
+          <img :src="`/images/g/${selectedImage}`" class="modal-image" />
         </div>
-      </transition>
-      <nuxt-link to="/" class="more">トップに戻る</nuxt-link>
-    </section>
-  </template>
-  
-  <script>
-  export default {
-    name: "Photo",
-    data() {
-      return {
-        items: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg","9.JPG", "10.JPG", "11.JPG", "12.PNG"],
-        isModalOpen: false,
-        selectedImage: null,
-      }
+      </div>
+    </transition>
+    <nuxt-link to="/" class="more">トップに戻る</nuxt-link>
+  </section>
+</template>
+
+<script>
+export default {
+  name: "Photo",
+  data() {
+    return {
+      items: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg","9.JPG", "10.JPG", "11.JPG", "12.PNG", "13.jpeg"],
+      isModalOpen: false,
+      selectedImage: null,
+    }
+  },
+  methods: {
+    openModal(index) {
+      this.selectedImage = this.items[index];
+      this.isModalOpen = true;
     },
-    methods: {
-      openModal(index) {
-        this.selectedImage = this.items[index];
-        this.isModalOpen = true;
-      },
-      closeModal() {
-        this.isModalOpen = false;
-        this.selectedImage = null;
-      },
+    closeModal() {
+      this.isModalOpen = false;
+      this.selectedImage = null;
     },
-  }
-  </script>
+    scrollTop() {
+      window.scrollTo({
+        top:0,
+        behavior:"smooth"
+      })
+    }
+  },
+}
+</script>
   
   <style lang="scss" scoped>
   #photo {
