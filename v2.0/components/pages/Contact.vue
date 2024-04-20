@@ -48,8 +48,13 @@ export default defineComponent( {
 <style lang="scss" scoped>
 #contact {
   padding: 40px 0;
-  @media screen and (max-width:800px) {
-    padding: 0;
+  @media screen and (max-width: 700px) {
+    .contact-box {
+      flex-direction: column;
+    }
+    .map-container {
+      order: 2;
+    }
   }
 }
 
