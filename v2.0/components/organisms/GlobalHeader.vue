@@ -8,11 +8,16 @@
     </div>
     <div class="nav">
       <ul>
-        <li><a href="#home" class="">ホーム</a></li>
-        <li><a href="#feature" class="">特徴</a></li>
-        <li><a href="#photo" class="active">写真</a></li>
-        <li><a href="#pricing" class="">料金</a></li>
-        <li><a href="#contact" class="">お問い合わせ</a></li>
+        <li v-if="$route.path !== '/photo'"><a href="#home" class="">ホーム</a></li>
+        <li v-if="$route.path == '/photo'"><nuxt-link to="/#home" class="">ホーム</nuxt-link></li>
+        <li v-if="$route.path !== '/photo'"><a href="#feature" class="">特徴</a></li>
+        <li v-if="$route.path == '/photo'"><nuxt-link to="/" class="">特徴</nuxt-link></li>
+        <li v-if="$route.path !== '/photo'"><a href="#photo" class="active">写真</a></li>
+        <li v-if="$route.path == '/photo'"><nuxt-link to="/" class="">写真</nuxt-link></li>
+        <li v-if="$route.path !== '/photo'"><a href="#pricing" class="">料金</a></li>
+        <li v-if="$route.path == '/photo'"><nuxt-link to="/" class="">料金</nuxt-link></li>
+        <li v-if="$route.path !== '/photo'"><a href="#contact" class="">お問い合わせ</a></li>
+        <li v-if="$route.path == '/photo'"><nuxt-link to="/" class="">お問い合わせ</nuxt-link></li>
       </ul>
     </div>
     <div class="side">
