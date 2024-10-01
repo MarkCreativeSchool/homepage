@@ -41,7 +41,7 @@
           </div>
           <div>
             <div>場所：</div>
-            <div>情報・プログラミング専門スクール MARK</div>
+            <div><nuxt-link to="/">情報・プログラミング専門スクール MARK</nuxt-link></div>
           </div>
           <div>
             <div>住所：</div>
@@ -81,16 +81,16 @@
       <h2>スケジュール</h2>
       <ul>
         <li>
-          <div>10:00 集合</div>
+          <div>10:00</div>
+          <div>集合 ... お子様をお預かりし、アイスブレイク後にModの制作を開始</div>
         </li>
         <li>
-          <div>12:00 昼食</div>
+          <div>12:00</div>
+          <div>昼食 ... こちらで準備したお弁当を食べながら友達と仲良くなりましょう。</div>
         </li>
         <li>
-          <div>13:00 集合</div>
-        </li>
-        <li>
-          <div>16:00 解散</div>
+          <div>16:00</div>
+          <div>解散 ... お時間になりましたらお迎えに来てください。制作したファイルをUSBに入れてお渡しいたします。</div>
         </li>
       </ul>
     </div>
@@ -223,6 +223,21 @@ export default {}
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+}
+
+.time-line {
+  ul {
+    li {
+      display: flex;
+      margin-bottom: 20px;
+      div:first-child {
+        margin-right: 20px;
+      }
+      div:last-child {
+        flex: 1;
+      }
     }
   }
 }
