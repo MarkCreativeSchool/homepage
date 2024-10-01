@@ -65,13 +65,13 @@
         </li>
         <li class="column is-4">
           <div class="img">
-            <img src="/images/events/2024-10-14/image1.png" alt="Java" />
+            <img src="/images/events/2024-10-14/image3.png" alt="Java" />
           </div>
           <div>テクスチャの作成</div>
         </li>
         <li class="column is-4">
           <div class="img">
-            <img src="/images/events/2024-10-14/image1.png" alt="Java" />
+            <img src="/images/events/2024-10-14/image2.jpg" alt="Java" />
           </div>
           <div>3Dモデリング</div>
         </li>
@@ -215,6 +215,18 @@ export default {}
     }
   }
 }
+
+.topic {
+  .img {
+    height: 240px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
 .faq {
   ul {
     li {

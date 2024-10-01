@@ -6,7 +6,7 @@
         <h1>MARK</h1>
       </a>
     </div>
-    <div class="nav">
+    <div v-if="route.name === 'index'" class="nav">
       <ul>
         <li v-if="$route.path !== '/photo'"><a href="#home" class="">ホーム</a></li>
         <li v-if="$route.path == '/photo'"><nuxt-link to="/#home" class="">ホーム</nuxt-link></li>
@@ -20,7 +20,7 @@
         <li v-if="$route.path == '/photo'"><nuxt-link to="/" class="">お問い合わせ</nuxt-link></li>
       </ul>
     </div>
-    <div class="side">
+    <div v-if="route.name === 'index'" class="side">
       <a href="tel:029-875-7647">
         <i class="la la-whatsapp"></i> 029-875-7647
       </a>
@@ -39,10 +39,8 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "GlobalHeader"
-}
+<script setup lang="ts">
+const route = useRoute()
 </script>
 
 <style lang="scss" scoped>
