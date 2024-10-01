@@ -1,0 +1,1 @@
+export { default } from "file:///Users/mark/Desktop/p/codoor/homepage/v2/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

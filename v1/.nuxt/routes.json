@@ -1,0 +1,16 @@
+[
+  {
+    "name": "health",
+    "path": "/health",
+    "component": "/Users/mark/Desktop/p/codoor/homepage/pages/health.vue",
+    "chunkName": "pages/health",
+    "_name": "_b15ea7c2"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/mark/Desktop/p/codoor/homepage/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_17066842"
+  }
+]
