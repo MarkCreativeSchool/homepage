@@ -1,8 +1,13 @@
 <template>
   <div>
     <Hero />
-    <div style="text-align: center; background: #f3f3f3; padding: 40px 0;">
-      <div style="font-weight: bold; margin-bottom: 20px; font-size: 20px;">2024年10月14日 マイクラ 1Dayプログラミング</div>
+    <div style="text-align: center; background: #f3f3f3; padding: 40px 0; margin-bottom: 40px;">
+      <div style="font-weight: bold; margin-bottom: 20px; font-size: 20px;">
+        <div>2024年10月14日</div>
+        <div style="font-size: 32px;">
+          <b style="color: #FF6F61">マイクラ 1Dayプログラミング</b>
+        </div>
+      </div>
       <nuxt-link to="/events/2024-10-14" class="button is-large" style="background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); color: #fff;">
         詳しくはこちら
       </nuxt-link>
